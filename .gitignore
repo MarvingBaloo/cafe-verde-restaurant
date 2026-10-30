@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Backups (locaux uniquement, jamais en remote)
+backups/
+
+# Exports de migration (données clients — jamais en remote)
+export-firestore/
+export-firestore.zip
+storage-export-*/
+auth-export-*.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server.log
+server_test.log
+server_start.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+
+# Uploads (les fichiers utilisateurs ne doivent pas être versionnés)
+backend/uploads/
+
+# Generated files
+project_context.txt
+project-snapshot.md
+
+# Notes d'analyse locales (transmises à la main, pas versionnées)
+ANALYSE-BRANCHE-FRONTENDUPDATE.md
+ANALYSE-FrontendUpdate-captures/
+
+# Handover / démo (contient des credentials — partager par mail uniquement)
+DEMO.md
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+
+# Vercel (si applicable)
+.vercel
+
+# Config de déploiement backend (contient les secrets prod)
+deploy/backend.env
